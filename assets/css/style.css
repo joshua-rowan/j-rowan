@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-header {
+header, footer {
     text-align: center;
     background-color: #264B75;
     color: #FF641C;
