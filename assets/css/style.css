@@ -27,6 +27,12 @@ nav a {
 ul {
     display: flex;
     text-align: center;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+    text-decoration: none;
 }
 
 img {
