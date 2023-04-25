@@ -15,8 +15,14 @@ nav {
     background-color: azure;
 }
 
+nav a {
+    text-align: center;
+}
 
-
+ul {
+    display: flex;
+    text-align: center;
+}
 
 img {
     margin: 0;
