@@ -37,3 +37,21 @@ section {
     background-color: #fff;
     padding: 20px;
 }
+
+footer {
+    padding: 20px;
+    text-align:center;
+    background: #13293d;
+    color: #fff;
+
+}
+
+/* Image Placeholders */
+.sample-img {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+    border: 1px solid black;
+}
+
