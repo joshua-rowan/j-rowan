@@ -8,6 +8,7 @@ body {
     margin: 0;
     font-size: 1.75rem;
     line-height: 1.5;
+    background-color: #343434;
 }
 
 header,
@@ -32,27 +33,24 @@ h6 {
 
 h1 {
   /* 4rem = 40px (4 * 10px) */
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 3.5rem;
-}
-
-h3 {
   font-size: 3rem;
 }
 
-h4 {
+h2 {
   font-size: 2.5rem;
 }
 
-h5 {
+h3 {
   font-size: 2rem;
 }
 
-h6 {
+h4 {
   font-size: 1.5rem;
+}
+
+h5,
+h6, {
+  font-size: 1rem;
 }
 
 p {
@@ -101,10 +99,13 @@ aside {
 section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 70%;
     background-color: #343434;
     color: #8cb4ff;
     padding: 30px;
+    justify-content: space-between;
 }
 
 /* Image Placeholders */
@@ -145,6 +146,9 @@ section {
     flex-basis: 100%;
     height: 0;
   }
+.project-main-image {
+  
+}
 
 .project-card {
     display: flex;
@@ -153,19 +157,21 @@ section {
     align-items: center;
     min-height: 100%;
     padding: 2rem;
-    color: purple;
-    outline: 2px dashed black;
+    color: #8cb4ff;
+    outline: 5px ridge #8cb4ff;
     outline-offset: -2px;
     transition: all 0.5s ease-in-out;
+    min-width: 275px;
+    background-color: #1b1b1b;
   }
 
   .project-card .project-header {
     position: relative;
     margin: -4rem 0 1.5rem 0;
     padding: 0.5rem 1rem;
-    background-color: pink;
-    color: red;
-    border: 2px solid black;
+    background-color: #1b1b1b;
+    color: #8cb4ff;
+    border: 2px solid #8cb4ff;
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
   }
@@ -186,19 +192,37 @@ section {
   tab-size: 4;
   padding: 1.2rem 1rem;
   color: var(--gin);
-  border-radius: 8px;
+  border-radius: 25px;
   background-image: linear-gradient(
-    rgba(232, 102, 236, 0.3) 0%,
-    rgba(232, 102, 236, 0.6) 100%
+    rgba(236, 106, 102, 0.411) 0%,
+    rgba(236, 155, 102, 0.6) 100%
   );
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .project-card pre:active {
     user-select: all;
   }
 
+a:link {
+  text-decoration: none;
+  color: #8cb4ff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #8cb4ff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 
   @media screen and (min-width: 768px) {
     /* on tablets, set columns to only be 50% of the width and not grow */
