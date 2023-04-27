@@ -87,6 +87,14 @@ main {
     flex-wrap: wrap;
 }
 
+img {
+  width: 100%;
+}
+
+header img {
+  width: 15%; 
+  height: 15%; 
+}
 
 aside {
     width: 30%;
