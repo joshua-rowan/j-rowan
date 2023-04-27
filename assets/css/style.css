@@ -1,43 +1,80 @@
-/* Color Designs Sourced from khroma.co */
-/* This version pulls from 02 Activity 01, 03*/
-*{
+/* This version pulls from 02 Activity 01, 03, 05, and mini-project */
+* {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-family: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
     margin: 0;
+    font-size: 1.75rem;
+    line-height: 1.5;
 }
 
-header {
-    background: #13293d;
-    padding: 20px; /* makes the box much larger and fills in the white space */
+header,
+footer {
+    background: #1b1b1b;
+    padding: 20px;
     text-align: center;
-    color: #fff;
+    color: #8cb4ff;
 }
 
-/* How do I get my links to center and space evenly? 
-Also, How can I get the links in the header over to the right. Footer
-a problem as well. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  color: #8cb4ff;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  /* 4rem = 40px (4 * 10px) */
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1%;
-    background-color: #d8a47f;
-    color: #fff;
+    background-color: #4e4e4e;
+    color: #8cb4ff;
 }
 
 nav ul {
     display: flex;
+    margin: 0 auto;
     justify-content: space-between;
-    align-items: center;
     min-width: 50%;
 }
 
 nav a {
-    color: #fff;
+    color: #8cb4ff;
     font-weight: bold;
     text-decoration: none;
 }
@@ -48,46 +85,128 @@ li {
 }
 
 main {
-    display: flex; /* This made the aside section and My Work section side by side 70/30 */
+    display: flex;
     flex-wrap: wrap;
 }
 
+
 aside {
-    flex: 1;
-    background-color: #b9c6ae;
-    padding: 20px; /* grew the box to add more color to sides and bottom of section */
-    flex-wrap: wrap; /* no noticable differance at this time */
+    width: 30%;
+    background-color: #343434;
+    color: #8cb4ff;
+    padding: 20px;
+    flex-wrap: wrap;
 }
 
 section {
-    flex: 3;
-    background-color: #fff;
-    padding: 20px;
-}
-
-footer {
-    padding: 20px;
-    text-align:center;
-    background: #13293d;
-    color: #fff;
-
+    width: 70%;
+    background-color: #343434;
+    color: #8cb4ff;
+    padding: 30px;
 }
 
 /* Image Placeholders */
 .sample-img {
     background-color: #fff;
-    width: 100%;
+    width: 25%;
     padding: 20px;
     height: 200px;
     border: 1px solid black;
 }
 
-@media screen and (max-width: 768px) {
-    main,
-    nav {
-        flex-direction: column;
-    }
-    aside {
-        order: 1;
-    }
+.project-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+  }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+  
+.justify-center {
+    justify-content: center;
+  }
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: purple;
+    outline: 2px dashed black;
+    outline-offset: -2px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .project-card .project-header {
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    background-color: pink;
+    color: red;
+    border: 2px solid black;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+
+.project-card:hover,
+.project-card:hover .project-header {
+  box-shadow: inset 0px 0px 8px #8cb4ff, 0 0 15px #8cb4ff;
+  transform: translateY(-10px);
 }
+
+.project-card .project-block {
+    flex-grow: 1;
+  }
+
+.project-card pre {
+  white-space: pre-wrap;
+  overflow: auto;
+  tab-size: 4;
+  padding: 1.2rem 1rem;
+  color: var(--gin);
+  border-radius: 8px;
+  background-image: linear-gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.project-card pre:active {
+    user-select: all;
+  }
+
+
+  @media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .project-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .project-column:last-child {
+      flex-grow: 1;
+    }
+  }
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    header {
+      width: 100%;
+    }
+  
+    .project-column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
