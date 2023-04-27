@@ -1,76 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Joshua Rowan</title>
-        <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
-    </head>
 
-    <body>
-        <header>
-            <h1>Joshua Rowan</h1>
-            <img src="./assets/images/joshua-profile.jpg" width="15%" height="15%" alt="joshua-rowan-profile-pic"/>
-            <h2>I like to help people.</h2>
-            
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joshua Rowan</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
 
-        <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#my-work">My Work</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
-            </ul>
-        </nav>
+<body>
+    <header>
+        <h1>Joshua Rowan</h1>
+        <img src="./assets/images/joshua-profile.jpg" width="15%" height="15%" alt="joshua-rowan-profile-pic" />
+        <h2>I like to help people.</h2>
 
-        <main>
-            <aside id="about-me">
-                <h3>About Me</h3>
-                    <p>Hi! My name is Joshua Rowan and I am a web development student currently enrolled in UTSA's edX fullstack bootcamp program. I am very grateful to be pursuing my passion for technology and transitioning into a career as a web developer. </p>
-                    <p>Before pursuing web development, I worked as an elementary and middle school teacher, where I honed my skills in communication, collaboration, and problem-solving. These skills have prove invaluable as I navigate the world of coding.</p>
-                    <p>In my freetime, I enjoy being with my children. Several of my current projects are directed towards helping parents with the unexpected responsibilities that may be thrust upon you as a father or mother. Like when your son's baseball team needs a coach, and you're the only willing one available, even though you NEVER got a hit in your life! <strong>Yes</strong>, I am speaking from personal experience - which is how the PocketCoach App became my first personal project.</p>
-                    <p>Thank you for taking the time to learn a little bit about me. I look forward to connecting with you and sharing my future projects with the world!</p>
-            </aside>
+    </header>
 
-            <section id="my-work">
-                <h3>My Work</h3>
-                  <div>
-                    <h4>PocketCoach</h4>
-                    <div class="sample-img">Image</div>
-                    <p>For the Parent who never though they'd have to answer the question, "Hey Coach! What are we doing today?"</p>
-                </div>
-                <div>
-                    <h4>MHFinder</h4>
-                    <div class="sample-img">Image</div>
-                    <p>Live anywhere. Find your mobile home today.</p>
-                </div>
-                <div>
-                    <h4>CRKT WRKR</h4>
-                    <div class="sample-img">Image</div>
-                    <p>Plan and track every type of workout. Easily plan weight-training, aerobics, HIIT, and circuit workouts. Journal your days, make notes for later, and track your progress. Includes auto-timers for rest and duration.</p>
-                </div>
-                <div>
-                    <h4>Death2Debt!</h4>
-                    <div class="sample-img">Image</div>
-                    <p>Know your enemy, and list out every debt monster you have! This app makes taking out those monsters fun, as you plan their defeat. Bury your monsters, and declare a Death to Debt!</p>
-                </div>
-                <div>
-                    <h4>HandyApp</h4>
-                    <div class="sample-img">Image</div>
-                    <p>Stay handy around your home. Reminders for important tasks and how-to videos for folks who want to be a little more handy around the home.</p>
-                </div>
-            </section>
-        </main>
+    <nav>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+    </nav>
 
-        <footer id="contact-me">
-            <h3>Contact Me</h3>
-            <ul>
-                <li>(210) 773-5022</li>
-                <li> joshua.rowan.2021@gmail.com</li>
-                <li>https://github.com/joshua-rowan</li>
-                <li>https://www.linkedin.com/in/josh-rowan-on-the-path-less-traveled/</li>
-            </ul>
-        </footer>
-    </body>
+    <main>
+        <aside id="about-me">
+            <h3>About Me</h3>
+            <p>Hi! My name is Joshua Rowan and I am a web development student currently enrolled in UTSA's edX fullstack
+                bootcamp program. I am very grateful to be pursuing my passion for technology and transitioning into a
+                career as a web developer. </p>
+            <p>Before pursuing web development, I worked as an elementary and middle school teacher, where I honed my
+                skills in communication, collaboration, and problem-solving. These skills have prove invaluable as I
+                navigate the world of coding.</p>
+            <p>In my freetime, I enjoy being with my children. Several of my current projects are directed towards
+                helping parents with the unexpected responsibilities that may be thrust upon you as a father or mother.
+                Like when your son's baseball team needs a coach, and you're the only willing one available, even though
+                you NEVER got a hit in your life! <strong>Yes</strong>, I am speaking from personal experience - which
+                is how the PocketCoach App became my first personal project.</p>
+            <p>Thank you for taking the time to learn a little bit about me. I look forward to connecting with you and
+                sharing my future projects with the world!</p>
+        </aside>
+
+        <section id="my-work" class="row justify-center">
+            <h3>My Work</h3>
+            <div class="project-column">
+                <figure class="project project-card">
+                <h4 class="project-header">PocketCoach</h4>
+                <div class="project-body">
+                <p>Helping parents coach kids in any sport.</p>
+                </div>
+                <pre class="Project-block">You coach kids. We plan practice.</pre>
+                </figure>
+            </div>
+            <div class="project-column">
+                <figure class="project project-card">
+                <h4 class="project-header">MHFinder</h4>
+                <div class="project-body">
+                <p>Live Anywhere</p>
+                </div>
+                <pre class="Project-block">Find your perfect mobile home today</pre>
+                </figure>
+            </div>
+            <div class="project-column">
+                <figure class="project project-card">
+                <h4 class="project-header">Death2Debt!</h4>
+                <div class="project-body">
+                <p>Know your enemy, and list out every debt monster you have!</p>
+                </div>
+                <pre class="Project-block">This app makes taking out those monsters
+                    fun, as you plan their defeat. Bury your monsters, and declare a Death to Debt!</pre>
+                </figure>
+            </div>
+            <div class="project-column">
+                <figure class="project project-card">
+                <h4 class="project-header">HandyApp</h4>
+                <div class="project-body">
+                <p>Stay handy around your home.</p>
+                </div>
+                <pre class="Project-block">Reminders for important tasks and how-to videos for folks who want to be
+                    a little more handy around the home.</pre>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact-me">
+        <h3>Contact Me</h3>
+        <ul>
+            <li>(210) 773-5022</li>
+            <li> joshua.rowan.2021@gmail.com</li>
+            <li>https://github.com/joshua-rowan</li>
+            <li>https://www.linkedin.com/in/josh-rowan-on-the-path-less-traveled/</li>
+        </ul>
+    </footer>
+</body>
+
 </html>
