@@ -158,6 +158,12 @@ section {
   
 }
 
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .project-card {
     display: flex;
     flex-direction: column;
@@ -214,6 +220,11 @@ section {
     user-select: all;
   }
 
+.project-slide {
+  max-width: 26%;
+  min-width: 22%;
+}
+
 a:link {
   text-decoration: none;
   color: #8cb4ff;
@@ -239,7 +250,11 @@ a:active {
     }
 
     aside {
-      order: 2;
+      /* order: 2; */
+      width: 100%;
+    }
+    #my-work {
+      width: 100%;
     }
   }
 
@@ -249,7 +264,6 @@ a:active {
   @media screen and (min-width: 992px) {
     header {
       width: 100%;
-      background-color: pink;
     }
   
     .project-column {
