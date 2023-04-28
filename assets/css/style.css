@@ -253,9 +253,23 @@ a:active {
       /* order: 2; */
       width: 100%;
     }
+
     #my-work {
       width: 100%;
     }
+
+    nav {
+      display: flex;
+      padding: 1%;
+      background-color: #4e4e4e;
+      color: #8cb4ff;
+  }
+
+    nav ul {
+      display: block;
+      align-items: center;
+      min-width: 50%;
+  }
   }
 
   
