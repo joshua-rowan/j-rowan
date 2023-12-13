@@ -4,7 +4,7 @@
 ## Table of Contents
 1. [Description](#Description)
 2. [Link](#Link)
-3. [Screenshot] (#Screenshot)
+3. [Screenshot](#Screenshot)
 4. [License](#License)
 5. [Questions](#Questions)
 
