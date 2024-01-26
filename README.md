@@ -16,7 +16,8 @@ This project is designed to by my working portfolio. It should provide a potenti
 https://joshua-rowan.github.io/j-rowan/
 
 ## Screenshot
-![joshua-rowan github io_j-rowan_](/assets/images/portfolio-scrnsht.png)
+![portfolio-scrnsht](https://github.com/joshua-rowan/j-rowan/assets/127271690/5614e64b-4823-43ce-8a4e-4450e43d2f5c)
+
 
 ## License
 MIT
